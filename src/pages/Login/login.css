@@ -1,0 +1,96 @@
+.paperStyle {
+    padding: 20;
+    height: 60vh;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.containerGrid {
+    padding: 1rem;
+}
+
+.avatarStyle {
+    background-color: #1bbd7e;
+}
+
+.logoStyle {
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.logoSpanStyle {
+    display: flex;
+    align-self: center;
+    margin-top: 0.62rem;
+    margin-left: 0.1rem;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.logoGridStyle {
+    display: flex;
+    justify-content: center;
+}
+
+.loginSignupStyle {
+    display: flex;
+    justify-content: flex-end;
+    font-family: system-ui;
+}
+
+.loginSpanStyle {
+    font-weight: 500;
+}
+
+.loginSpanStyle:active {
+    font-weight: 800;
+    color: #29B4E0;
+}
+
+.loginSpanStyle:hover {
+    font-weight: 500;
+    color: #29B4E0;
+}
+
+.signupStyle {
+    font-weight: 500;
+}
+
+.signupStyle:active {
+    font-weight: 800;
+    color: #29B4E0;
+}
+
+.signupStyle:hover {
+    font-weight: 500;
+    color: #29B4E0;
+}
+
+.formTitleContainer {
+    display: flex;
+    padding: 30px 50px 25px 75px;
+}
+
+.formTitleSpan {
+    font-family: system-ui;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.emailTextField {
+    margin-bottom: 34px !important;
+}
+
+.buttonGrid {
+    width: 224px !important;
+    margin-top: 23px;
+}
+
+.signInBtn {
+    width: 100% !important;
+    background: linear-gradient(268.88deg, #7EE0FF 0%, #15AAD9 100%) !important;
+    /* box-shadow: 0px 15px 20px rgba(32, 175, 221, 0.34) !important; */
+    border-radius: 5px;
+}

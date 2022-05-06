@@ -1,3 +1,6 @@
-import { Login } from "./Login/login";
+import Registration from "./Registration/registration";
+import Login from "./Login/login";
+import Home from "./Home/home";
+import Products from "./Products/products";
 
-export { Login };
+export { Registration, Login, Home, Products };
