@@ -1,6 +1,6 @@
-.paperStyle {
-    padding: 20;
-    height: 60vh;
+.signUpPaper {
+    padding: 20px;
+    height: 75vh;
     max-width: 400px;
     margin: 20px auto;
 }
@@ -66,4 +66,14 @@
 .signupStyle:hover {
     font-weight: 500;
     color: #29B4E0;
+}
+
+.alreadySpanStyle {
+    margin-top: 30px;
+}
+
+.alreadySpanStyle span {
+    font-size: 17px !important;
+    color: #00000058;
+    font-family: system-ui;
 }

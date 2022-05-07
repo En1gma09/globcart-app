@@ -1,13 +1,16 @@
-import { Avatar, Button, Grid, Link, Paper, TextField } from "@mui/material";
 import React, { useContext, useState } from "react";
+import { Avatar, Button, Grid, Link, Paper, TextField } from "@mui/material";
+
+import { useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../auth/auth";
 
 import "./login.css";
 
 export default function Login() {
-    const { authenticated, login } = useContext
-    (AuthContext);
+    const { authenticated, login } = useContext(AuthContext);
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -16,6 +19,10 @@ export default function Login() {
         event.preventDefault();
 
         login(email, password);
+    }
+
+    const handleCreate = () => {
+        navigate("/signup");
     }
 
     return (
@@ -53,6 +60,7 @@ export default function Login() {
                             label="Password"
                             type="password"
                             helperText="Some important text"
+                            className="passwordTextField"
                             autoComplete="current-password"
                         />
                     </Grid>
@@ -61,6 +69,12 @@ export default function Login() {
                     </Grid>
                 </Grid>
             </Paper>
+            <Grid align="center" className="newToGridSpan">
+                <span>New to GlobCart?</span>
+            </Grid>
+            <Grid align="center">
+                <Button onClick={handleCreate} className="signUpBtn" variant="contained">Create your GlobCart account</Button>
+            </Grid>
         </Grid>
     );
 }
