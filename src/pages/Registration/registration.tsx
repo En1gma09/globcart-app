@@ -71,7 +71,7 @@ export default function Registration() {
                         <Button onClick={handleSignUp} className="signInBtn" variant="contained">Create account</Button>
                     </Grid>
                 </Grid>
-                <Grid className="alreadySpanStyle">
+                <Grid align="center" className="alreadySpanStyle">
                     <span>Already have an account?</span>
                     <Link href="/" color="#29B4E0">
                         {'Sign in'}

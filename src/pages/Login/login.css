@@ -185,7 +185,7 @@
     }
     .formTitleSpan {
         display: flex;
-        right: 0;
+        right: 50px;
         font-size: 23px;
         font-family: system-ui;
         font-weight: 500;

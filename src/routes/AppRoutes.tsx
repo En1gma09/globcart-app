@@ -1,9 +1,10 @@
+import Navbar from '../components/Layout/Navbar';
 import React, { useContext } from "react";
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import App from "../App";
 
-import { Registration, Login, Home, Products } from "../pages";
+import { Registration, Login, Home, Products, Orders, Cart } from "../pages";
 
 import { AuthProvider, AuthContext } from "../auth/auth";
 
@@ -24,6 +25,7 @@ export default function AppRoutes() {
 
     return (
         <Router>
+            <Navbar />
             <AuthProvider>
                 <Routes>
                     <Route path="/" element={<Login />} />
@@ -31,6 +33,8 @@ export default function AppRoutes() {
                     {/* <Route path="/" element={<App />} /> */}
                     <Route path="/home" element={<Private><Home /></Private>} />
                     <Route path="/products" element={<Private><Products /></Private>} />
+                    <Route path="/orders" element={<Private><Orders /></Private>} />
+                    <Route path="/cart" element={<Private><Cart /></Private>} />
                 </Routes>
             </AuthProvider>
         </Router>
