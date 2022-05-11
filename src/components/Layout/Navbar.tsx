@@ -1,5 +1,4 @@
-import { Container } from "@mui/material";
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
     NavbarContainer,
     LeftContainer,
@@ -9,10 +8,18 @@ import {
     NavbarLinkContainer,
     NavbarLink,
     BoldLogoSpan,
-    LightLogoSpan
+    LightLogoSpan,
+    ShoppingCart
 } from '../../styles/Navbar.style';
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
+
+    const handleClickCart = () => {
+        navigate("/cart");
+    }
+
     return (
         <NavbarContainer>
             <NavbarInnerContainer>
@@ -25,6 +32,7 @@ export default function Navbar() {
                     </NavbarLinkContainer>
                 </LeftContainer>
                 <RightContainer>
+                    <ShoppingCart onClick={handleClickCart} />
                     <BoldLogoSpan>GlobCart<LightLogoSpan>.com.br</LightLogoSpan></BoldLogoSpan>
                 </RightContainer>
             </NavbarInnerContainer>

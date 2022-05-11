@@ -13,5 +13,9 @@ export const createSession = async (email: string, password: string) => {
 }
 
 export const getUsers = async () => {
-    return api.get("/users");
+    return api.get("/api/users");
+}
+
+export const getProducts = async () => {
+    return await api.get("/api/products");
 }

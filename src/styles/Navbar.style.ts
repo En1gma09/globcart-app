@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 export const NavbarContainer = styled.nav`
     width: 100%;
@@ -62,4 +63,16 @@ export const LightLogoSpan = styled.div`
     color: white;
     margin-left: 2px;
     margin-top: 11px;
+`;
+
+export const ShoppingCart = styled(ShoppingCartOutlinedIcon)`
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        width: 30px;
+        height: 30px;
+        color: #29B4E0;
+    }
 `;
