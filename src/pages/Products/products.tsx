@@ -9,7 +9,7 @@ export default function Products() {
 
     const { authenticated, logout } = useContext(AuthContext);
 
-    const productList = product.map((item: any) => <div><ProductCard product={item}>{item}</ProductCard></div>)
+    const productList = product.map((item: any) => <ProductCard product={item}>{item}</ProductCard>)
 
     const handleLogout = () => {
         logout();
